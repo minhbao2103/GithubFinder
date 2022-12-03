@@ -1,0 +1,38 @@
+.toggleButton {
+    width: 54px;
+    height: 24px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 4px;
+    background-color: #6A5ACD;
+    box-shadow: 0px 0px 4px 0px black;
+}
+.Circle {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+.Icon {
+    color: black;
+    font-size: 16px;
+    margin-top: 4px;
+    transition: all 0.2 linear;
+}
+.Input {
+    height: 0;
+    width: 0;
+    opacity: 1;
+}
+.Input:checked ~ .Circle {
+    transform: translateX(-26px);
+    -webkit-transform: translateX(-26px);
+}
+.Input:checked ~ .Icon {
+    transform: translateX(26px);
+    -webkit-transform: translateX(26px);
+}
+
